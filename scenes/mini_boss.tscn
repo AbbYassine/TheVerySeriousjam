@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://bknf8idd3cqj4"]
+
+[ext_resource type="Texture2D" uid="uid://diy46bgm1m6la" path="res://assets/Little Mage/Idle/Idle1.png" id="1_beab5"]
+[ext_resource type="Texture2D" uid="uid://2msliiu0ur1u" path="res://assets/Little Mage/Idle/Idle2.png" id="2_2lnyf"]
+[ext_resource type="Texture2D" uid="uid://bavhbd7t030y8" path="res://assets/Little Mage/Idle/Idle3.png" id="3_itdih"]
+[ext_resource type="Texture2D" uid="uid://dcvuv3gmq4x85" path="res://assets/Little Mage/Idle/Idle4.png" id="4_4od26"]
+[ext_resource type="Texture2D" uid="uid://bj2l0tleybmmk" path="res://assets/Little Mage/Idle/Idle5.png" id="5_a2fu5"]
+[ext_resource type="Texture2D" uid="uid://drxi1jvhg6eme" path="res://assets/Little Mage/Idle/Idle6.png" id="6_yfea8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rvgg1"]
+atlas = ExtResource("1_beab5")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fb20r"]
+atlas = ExtResource("2_2lnyf")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_68fho"]
+atlas = ExtResource("3_itdih")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ikbi5"]
+atlas = ExtResource("4_4od26")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gmvq6"]
+atlas = ExtResource("5_a2fu5")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ruxxp"]
+atlas = ExtResource("6_yfea8")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3mwki"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rvgg1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fb20r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_68fho")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ikbi5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmvq6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ruxxp")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_msk63"]
+size = Vector2(8, 13)
+
+[node name="mini_Boss" type="CharacterBody2D" unique_id=792584367]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1324324110]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_3mwki")
+animation = &"idle"
+autoplay = "idle"
+frame = 5
+frame_progress = 0.30713382
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1351191081]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_msk63")

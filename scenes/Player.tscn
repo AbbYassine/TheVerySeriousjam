@@ -84,7 +84,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_d3wef")
 }],
 "loop": true,
-"name": &"default",
+"name": &"idle",
 "speed": 10.0
 }, {
 "frames": [{
@@ -121,9 +121,9 @@ script = ExtResource("1_cw2d6")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1576069430]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_o4126")
-animation = &"run"
-autoplay = "default"
-frame_progress = 0.73475903
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.31762382
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=470162875]
 visible = false
