@@ -1,11 +1,76 @@
 [gd_scene format=3 uid="uid://bknf8idd3cqj4"]
 
 [ext_resource type="Texture2D" uid="uid://diy46bgm1m6la" path="res://assets/Little Mage/Idle/Idle1.png" id="1_beab5"]
+[ext_resource type="Texture2D" uid="uid://v8ivipbosgod" path="res://assets/Little Mage/Dying/Dying1.png" id="1_msk63"]
 [ext_resource type="Texture2D" uid="uid://2msliiu0ur1u" path="res://assets/Little Mage/Idle/Idle2.png" id="2_2lnyf"]
+[ext_resource type="Texture2D" uid="uid://chvsvxhu28y6y" path="res://assets/Little Mage/Dying/Dying2.png" id="2_cpum8"]
+[ext_resource type="Texture2D" uid="uid://1hc21spaf3c5" path="res://assets/Little Mage/Dying/Dying3.png" id="3_hdjhd"]
 [ext_resource type="Texture2D" uid="uid://bavhbd7t030y8" path="res://assets/Little Mage/Idle/Idle3.png" id="3_itdih"]
 [ext_resource type="Texture2D" uid="uid://dcvuv3gmq4x85" path="res://assets/Little Mage/Idle/Idle4.png" id="4_4od26"]
+[ext_resource type="Texture2D" uid="uid://vk1t1wuc6lhd" path="res://assets/Little Mage/Dying/Dying4.png" id="4_icsy1"]
 [ext_resource type="Texture2D" uid="uid://bj2l0tleybmmk" path="res://assets/Little Mage/Idle/Idle5.png" id="5_a2fu5"]
+[ext_resource type="Texture2D" uid="uid://e21kturvtls3" path="res://assets/Little Mage/Dying/Dying5.png" id="5_yni3y"]
+[ext_resource type="Texture2D" uid="uid://bi2q3b2prw02c" path="res://assets/Little Mage/Dying/Dying6.png" id="6_mlvbk"]
 [ext_resource type="Texture2D" uid="uid://drxi1jvhg6eme" path="res://assets/Little Mage/Idle/Idle6.png" id="6_yfea8"]
+[ext_resource type="Texture2D" uid="uid://c6aykkokrse2o" path="res://assets/Little Mage/Dead/Dead.png" id="7_103ld"]
+[ext_resource type="Texture2D" uid="uid://b8wfisy0e2nes" path="res://assets/Little Mage/Decomposing/Decomposing1.png" id="8_x7nfy"]
+[ext_resource type="Texture2D" uid="uid://cv6b51l8ktxop" path="res://assets/Little Mage/Decomposing/Decomposing2.png" id="9_wp1nu"]
+[ext_resource type="Texture2D" uid="uid://v886p1vjogu" path="res://assets/Little Mage/Decomposing/Decomposing3.png" id="10_qceb1"]
+[ext_resource type="Texture2D" uid="uid://rhnxro2xb6b0" path="res://assets/Little Mage/Decomposing/Decomposing4.png" id="11_06lgt"]
+[ext_resource type="Texture2D" uid="uid://bwte5oqncd27h" path="res://assets/Little Mage/Decomposing/Decomposing5.png" id="12_dvigx"]
+[ext_resource type="Texture2D" uid="uid://duelpi7ha3pp5" path="res://assets/Little Mage/Decomposing/Decomposing6.png" id="13_acmsw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_isq4e"]
+atlas = ExtResource("1_msk63")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hnbby"]
+atlas = ExtResource("2_cpum8")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ywanq"]
+atlas = ExtResource("3_hdjhd")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8py50"]
+atlas = ExtResource("4_icsy1")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4j22t"]
+atlas = ExtResource("5_yni3y")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ybfbx"]
+atlas = ExtResource("6_mlvbk")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0yior"]
+atlas = ExtResource("7_103ld")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ocwj2"]
+atlas = ExtResource("8_x7nfy")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i27qb"]
+atlas = ExtResource("9_wp1nu")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j01wt"]
+atlas = ExtResource("10_qceb1")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8g01e"]
+atlas = ExtResource("11_06lgt")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwanh"]
+atlas = ExtResource("12_dvigx")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x4a2u"]
+atlas = ExtResource("13_acmsw")
+region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rvgg1"]
 atlas = ExtResource("1_beab5")
@@ -33,6 +98,50 @@ region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3mwki"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_isq4e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hnbby")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ywanq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8py50")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4j22t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ybfbx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0yior")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ocwj2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i27qb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j01wt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8g01e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mwanh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x4a2u")
+}],
+"loop": true,
+"name": &"dying",
+"speed": 7.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_rvgg1")
@@ -67,8 +176,7 @@ texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_3mwki")
 animation = &"idle"
 autoplay = "idle"
-frame = 5
-frame_progress = 0.30713382
+frame_progress = 0.7599558
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1351191081]

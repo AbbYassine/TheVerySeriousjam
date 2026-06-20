@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cctc8gskfevar"]
+
+[ext_resource type="Script" uid="uid://cdf5v7dcdpm6e" path="res://Scripts/arena.gd" id="1_7ft05"]
+[ext_resource type="PackedScene" uid="uid://bknf8idd3cqj4" path="res://scenes/mini_boss.tscn" id="2_4ag8t"]
+[ext_resource type="Script" uid="uid://utch632ikbm6" path="res://scenes/mini_boss.gd" id="3_dpxgc"]
+[ext_resource type="Script" uid="uid://c30u06bvbsqei" path="res://Scripts/attacknode.gd" id="4_oexds"]
+[ext_resource type="Script" uid="uid://buihlqjc7k18i" path="res://Scripts/healthnode.gd" id="5_naajo"]
+
+[node name="arena" type="Control" unique_id=1731577297]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7ft05")
+
+[node name="mini_Boss" parent="." unique_id=792584367 instance=ExtResource("2_4ag8t")]
+script = ExtResource("3_dpxgc")
+
+[node name="Attacknode" type="Node" parent="mini_Boss" unique_id=135529793]
+script = ExtResource("4_oexds")
+
+[node name="Healthnode" type="Node" parent="mini_Boss" unique_id=527186889]
+script = ExtResource("5_naajo")
