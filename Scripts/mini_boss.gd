@@ -6,7 +6,7 @@ var damage
 var turn
 
 func attack():
-	
+	pass
 
 func calculate_damage():
 	pass
